@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/schemafbi</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.enable_lazy_load_no_trans">true</property>
+        <property name="hibernate.classloading.use_current_tccl_as_parent">false</property>
+    
+        <mapping class="krcho.fbi.databaza.tabulky.TypovaPozicia"/>
+        <mapping class="krcho.fbi.databaza.tabulky.StupenVzdelania"/>
+        <mapping class="krcho.fbi.databaza.tabulky.OdbornaPrax"/>
+        <mapping class="krcho.fbi.databaza.tabulky.Certifikat"/>
+        <mapping class="krcho.fbi.databaza.tabulky.PopisCinnosti"/>
+        <mapping class="krcho.fbi.databaza.tabulky.Isco"/>
+        <mapping class="krcho.fbi.databaza.tabulky.TypObjektu"/>
+        <mapping class="krcho.fbi.databaza.tabulky.VnutorneSkupinyBR"/>
+        <mapping class="krcho.fbi.databaza.tabulky.VnutorneBR"/>
+        <mapping class="krcho.fbi.databaza.tabulky.VonkajsiTypBR"/>
+        <mapping class="krcho.fbi.databaza.tabulky.VonkajsieBR"/>
+        <mapping class="krcho.fbi.databaza.tabulky.RizikoObjektu"/>
+        <mapping class="krcho.fbi.databaza.tabulky.Forma"/>
+        <mapping class="krcho.fbi.databaza.tabulky.Metoda"/>
+        <mapping class="krcho.fbi.databaza.tabulky.Kompetencia"/>
+        <mapping class="krcho.fbi.databaza.tabulky.Hrozba"/>
+        <mapping class="krcho.fbi.databaza.tabulky.ZdrojHrozby"/>
+        <mapping class="krcho.fbi.databaza.tabulky.UrovenSposobilosti"/>
+        <mapping class="krcho.fbi.databaza.tabulky.Sposobilost"/>
+        <mapping class="krcho.fbi.databaza.tabulky.OpisUrovne"/>
+        <mapping class="krcho.fbi.databaza.tabulky.PozadovanaSposobilost"/>
+        <mapping class="krcho.fbi.databaza.tabulky.OdbornaZrucnost"/>
+        <mapping class="krcho.fbi.databaza.tabulky.OdbornaVedomost"/>
+        <mapping class="krcho.fbi.databaza.tabulky.PozadovanaVedomost"/>
+        <mapping class="krcho.fbi.databaza.tabulky.PozadovanaZrucnost"/>
+        <mapping class="krcho.fbi.databaza.tabulky.NKRZrucnost"/>
+        <mapping class="krcho.fbi.databaza.tabulky.NKRVedomost"/>
+    </session-factory>
+</hibernate-configuration>
